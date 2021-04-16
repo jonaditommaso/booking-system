@@ -1,0 +1,41 @@
+h3 {
+    color: #695ace;
+    padding: 15px;
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h6 {
+    display: flex;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 5px;
+}
+
+svg {
+    display: flex;
+    justify-content: flex-start;
+}
+
+svg:hover {
+    cursor: pointer;
+}
+
+.booking > h6 {
+    justify-content: center;
+    color: #695ace;
+}

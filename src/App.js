@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Booking from './components/Booking';
+import ConfirmBooking from './components/ConfirmBooking';
+import history from './history';
+import { Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router history={history}>
+        <Switch>
+          <Route path='/' exact component={Booking} />
+          <Route path='/confirm' exact component={ConfirmBooking} />
+        </Switch>
+      </Router>
     </div>
   );
 }

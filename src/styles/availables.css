@@ -1,0 +1,38 @@
+.availables {
+    border: solid 1.5px #d3d2d5;
+    margin: 50px;
+    padding: 10px;
+}
+.availables__lineOne {
+    color: #86d8aa
+}
+
+.content {
+    display: flex;
+    border-radius: 4px;
+}
+
+.data {
+    display: flex;
+} 
+
+.content:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.image {
+    width: min-content;
+}
+
+.image > img {
+    display: flex;
+    border-radius: 100px;
+    height: 90px;
+    width: 90px;
+}
+
+h5 {
+    display: flex;
+    justify-content: flex-end;
+}
