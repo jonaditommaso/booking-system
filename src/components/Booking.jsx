@@ -53,17 +53,10 @@ const Booking = () => {
     return ( 
         <div>
             <NavBar>
-                <div className="icon">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-                            <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                        </svg>
-                    </div>   
-                </div>
                 <h5>Make a Booking</h5>
                 
             </NavBar>
-            <h3>Book from Scratch</h3>
+            <h3>Booking System</h3>
             
             <div className="hours">
                 <OwnDropdown />
@@ -79,17 +72,12 @@ const Booking = () => {
                 </div>
             </div>
 
-            <div className="checkbox">
-                <input type="checkbox"></input>
-                <label><h6>Been Before</h6></label>
-            </div>
-
             <Calendar 
                 setSelectedDays={setSelectedDays}
             />
             
             <div className="boton">
-                <Button variant="primary" size="lg" block onClick={()=> goConfirm()} >
+                <Button variant="primary" size="lg" onClick={()=> goConfirm()} >
                     CREATE BOOKINGS
                 </Button> 
             </div>

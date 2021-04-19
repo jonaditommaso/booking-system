@@ -1,12 +1,13 @@
-.nav {
+ .nav {
     background-color: #d6dde3;
-     display: flex; 
+    display: flex; 
     justify-content: center;
     padding: 3px;
-}
+} 
 
 h5 {
     color: #2f2f32;
+    display: inline-flex;
 }
 
 svg {

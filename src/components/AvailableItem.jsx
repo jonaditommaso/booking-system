@@ -16,10 +16,10 @@ const AvailableItem = ({user, position, day, getUser, getDay, clicked, updateSel
                 </div>
                 <div className="data">
                     <div>
-                        <h6>
+                        <p>
                             {'10' > day.getDate() ? '0' + day.getDate() : day.getDate()} 
                             / {day.getMonth() + 1} / {day.getFullYear()}
-                        </h6>
+                        </p>
                         <div className="availables__lineOne">
                             {user?.name} is available
                         </div>

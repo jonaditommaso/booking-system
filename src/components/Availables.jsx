@@ -4,7 +4,7 @@ import jsonplaceholder from '../utils/jsonplaceholder';
 import history from '../history';
 import AvailableItem from './AvailableItem';
 
-const Availables = ({getConfirmation}) => {
+const Availables = ({getConfirmation, bookingSelected}) => {
 
     const RANGE = `${history.location.state.selectedStartHour} - ${history.location.state.selectedEndHour}`;
 
@@ -28,12 +28,14 @@ const Availables = ({getConfirmation}) => {
         setDaySelected(day);
         setUserPosition(userPosition);
     }
+
+    bookingSelected(userSelected)
     
-    getConfirmation(`${userSelected} on ${daySelected} in the ${RANGE}`)
+    getConfirmation(`${userSelected} on ${daySelected} between ${RANGE}`)
     
     return ( 
         <div className="availables">
-            <h5>{RANGE}</h5>
+            <h6>{RANGE}</h6>
             <hr/>
             {history && history.location.state.selectedDays.map((day, i) => (
                 <AvailableItem 
